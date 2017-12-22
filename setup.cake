@@ -9,7 +9,8 @@ BuildParameters.SetParameters(
     title: "Cake.Issues.EsLint",
     repositoryOwner: "cake-contrib",
     repositoryName: "Cake.Issues.EsLint",
-    appVeyorAccountName: "cakecontrib");
+    appVeyorAccountName: "cakecontrib",
+    shouldRunCodecov: false);
 
 BuildParameters.PrintParameters(Context);
 
