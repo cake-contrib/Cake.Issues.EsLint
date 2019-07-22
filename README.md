@@ -20,7 +20,7 @@ and for general information about the Cake build automation system see the [Cake
 | | Develop | Master |
 |:--:|:--:|:--:|
 |AppVeyor Windows|[![Build status](https://ci.appveyor.com/api/projects/status/bg5g0rn1b1xvpw06/branch/develop?svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-issues-eslint/branch/develop)|[![Build status](https://ci.appveyor.com/api/projects/status/bg5g0rn1b1xvpw06/branch/master?svg=true)](https://ci.appveyor.com/project/cakecontrib/cake-issues-eslint/branch/master)|
-|Azure DevOps Windows|[![Build Status](https://dev.azure.com/cake-contrib/Cake.Issues.EsLint/_apis/build/status/cake-contrib.Cake.Issues.EsLint?branchName=develop&jobName=Windows)](https://dev.azure.com/cake-contrib/Cake.Issues.EsLint/_build/latest?definitionId=12?branchName=develop)|[![Build Status](https://dev.azure.com/cake-contrib/Cake.Issues.EsLint/_apis/build/status/cake-contrib.Cake.Issues.EsLint?branchName=master&jobName=Windows)](https://dev.azure.com/cake-contrib/Cake.Issues.EsLint/_build/latest?definitionId=12?branchName=master)|
+|Azure DevOps Windows|[![Build Status](https://dev.azure.com/cake-contrib/Cake.Issues.EsLint/_apis/build/status/cake-contrib.Cake.Issues.EsLint?branchName=develop&jobName=Windows)](https://dev.azure.com/cake-contrib/Cake.Issues.EsLint/_build/latest?definitionId=12?branchName=develop)|[![Build Status](https://dev.azure.com/cake-contrib/Cake.Issues.EsLint/_apis/build/status/cake-contrib.Cake.Issues.EsLint?branchName=master&jobName=Windows)](https://dev.azure.com/cake-contrib/Cake.Issues.EsLint/_build/latest?definitionId=12&branchName=master)|
 
 ## Code Coverage
 
