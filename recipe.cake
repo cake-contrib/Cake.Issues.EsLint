@@ -12,6 +12,7 @@ BuildParameters.SetParameters(
     repositoryName: "Cake.Issues.EsLint",
     appVeyorAccountName: "cakecontrib",
     shouldGenerateDocumentation: false,
+    shouldPublishMyGet: false,
     shouldRunCodecov: false,
     shouldRunGitVersion: true);
 
