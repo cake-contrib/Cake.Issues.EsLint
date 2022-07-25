@@ -1,5 +1,8 @@
-#load nuget:?package=Cake.Recipe&version=1.0.0
+#load nuget:https://pkgs.dev.azure.com/cake-contrib/Home/_packaging/addins/nuget/v3/index.json?package=Cake.Recipe&version=3.0.0-beta0001-0007&prerelease
 
+//*************************************************************************************************
+// Settings
+//*************************************************************************************************
 
 Environment.SetVariableNames();
 
@@ -11,18 +14,19 @@ BuildParameters.SetParameters(
     repositoryOwner: "cake-contrib",
     repositoryName: "Cake.Issues.EsLint",
     appVeyorAccountName: "cakecontrib",
-    shouldGenerateDocumentation: false,
-    shouldPublishMyGet: false,
-    shouldRunCodecov: false,
-    shouldRunGitVersion: true);
+    shouldRunCoveralls: false, // Disabled because it's currently failing
+    shouldGenerateDocumentation: false);
 
 BuildParameters.PrintParameters(Context);
 
 ToolSettings.SetToolSettings(
     context: Context,
-    dupFinderExcludePattern: new string[] { BuildParameters.RootDirectoryPath + "/src/Cake.Issues.EsLint.Tests/*.cs", BuildParameters.RootDirectoryPath + "/src/Cake.Issues.EsLint*/**/*.AssemblyInfo.cs" },
     testCoverageFilter: "+[*]* -[xunit.*]* -[Cake.Core]* -[Cake.Testing]* -[*.Tests]* -[Cake.Issues]* -[Cake.Issues.Testing]* -[Shouldly]* -[DiffEngine]* -[EmptyFiles]*",
     testCoverageExcludeByAttribute: "*.ExcludeFromCodeCoverage*",
     testCoverageExcludeByFile: "*/*Designer.cs;*/*.g.cs;*/*.g.i.cs");
+
+//*************************************************************************************************
+// Execution
+//*************************************************************************************************
 
 Build.RunDotNetCore();
